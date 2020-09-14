@@ -1,6 +1,6 @@
 # Cucumber example
 
-This is an example project for cucumber & selenium
+This is an example project of testing web page with Cucumber and Selenium
 
 ## Related links:
 
