@@ -49,7 +49,6 @@ public class StepDefinitions {
 
     @When("select second product")
     public void selectSecondProduct() {
-        // Write code here that turns the phrase above into concrete actions
         By secondElementLocator = By.cssSelector("[data-index=\"1\"]");
 
         this.wait.until(visibilityOfElementLocated(secondElementLocator));
@@ -61,7 +60,6 @@ public class StepDefinitions {
 
     @Then("product topic contains {string}")
     public void productTopicContains(String assertText) {
-        // Write code here that turns the phrase above into concrete actions
         By productTitleLocator = By.id("productTitle");
         this.wait.until(visibilityOfElementLocated(productTitleLocator));
         assertThat(this.driver.findElement(productTitleLocator).getText())
